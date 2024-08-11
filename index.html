@@ -19,37 +19,37 @@
         <ul class="col-6 d-flex justify-content-between ">
             <li id="computer-score-board" class="border rounded ">
                 Computer
-                <div>0</div>
+                <div id="computerScore">0</div>
             </li>
             <li id="player-score-board" class=" border rounded  ">
                 Player
-                <div>0</div>
+                <div id="playerScore">0</div>
             </li>
         </ul>
     </div>
     <ul class="player-choices">
-        <li>
+        <li id="player-choice-paper" data-choice="paper">
             🤚🏻
         </li>
-        <li>
+        <li id="player-choice-rock" data-choice="rock">
             👊🏻
         </li>
-        <li>
+        <li id="player-choice-scissors" data-choice="scissors">
             ✌🏻
         </li>
 
     </ul>
-
-    <div class=" result-board">
-        <div > 👊🏻</div>
-        <p>🏆</p>
-        <div> 🤚🏻</div>
+    <div id="gameBoard" class="result-board">Game Board</div>
+    <div id="resultBoard" class="result-board" style="display:none">
+        <div id="player"> 👊🏻</div>
+        <p id="result">🏆</p>
+        <div id="computer"> 🤚🏻</div>
+        <p id="timer"></p>
     </div>
 
 
-
-    <p>Time counter 0:15</p>
     <button class="reset-button">Reset Game</button>
 </div>
 </body>
+<script src="game.js"></script>
 </html>

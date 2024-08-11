@@ -20,11 +20,13 @@ li {
 
 }
 
-.player-choices{
+.player-choices {
     padding: 0;
     font-size: 70px;
+
 }
-.result-board{
+
+.result-board {
     margin: 10px auto;
     font-size: 30px;
     padding: 10px;
@@ -37,13 +39,14 @@ li {
 
 
 }
-.reset-button{
+
+.reset-button {
 
     padding: 5px 30px;
     border-radius: 5px;
     border: 1px solid aliceblue;
     color: #1e3c72;
-    background: white ;
+    background: white;
 
 }
 
@@ -66,6 +69,10 @@ li {
     background: white;
     padding: 10px;
 
+}
+
+#player-choice-scissors, #player-choice-rock, #player-choice-paper:hover {
+    cursor: pointer;
 }
 
 
