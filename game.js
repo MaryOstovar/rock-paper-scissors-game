@@ -22,6 +22,7 @@ function timer() {
       resetGame();
     } else {
       second--;
+      if (second < 10) second = `0${second}`;
       timerElement.innerText = `⏱️ 00:${second}`;
     }
   }, 1000);
