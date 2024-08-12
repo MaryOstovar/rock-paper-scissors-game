@@ -60,16 +60,24 @@ function calculateResult(playerChoice, computerChoice) {
 function showChoicesOnResultBoard(playerChoice, computerChoice) {
   document.getElementById('gameBoard').style.display = 'none';
 
-  // Show the player choice text
   const resultBoard = document.getElementById('resultBoard');
   resultBoard.style.display = 'block';
 
   let player = document.querySelector('#player');
+  player.classList.remove('animate__zoomIn');
   player.innerHTML = choices[playerChoice];
+  player.classList.add('animate__zoomIn');
 
   let computer = document.querySelector('#computer');
+  computer.classList.remove('animate__zoomIn');
   computer.innerHTML = choices[computerChoice];
+  computer.classList.add('animate__zoomIn');
   calculateResult(playerChoice, computerChoice);
+
+  setTimeout(() => {
+    player.classList.remove('animate__zoomIn');
+    computer.classList.remove('animate__zoomIn');
+  }, 1000);
 }
 
 function playGame(event) {

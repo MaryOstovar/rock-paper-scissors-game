@@ -1,3 +1,4 @@
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -73,6 +74,10 @@ li {
 
 #player-choice-scissors, #player-choice-rock, #player-choice-paper:hover {
     cursor: pointer;
+}
+
+#result, #player, #computer {
+    font-size: 40px;
 }
 
 

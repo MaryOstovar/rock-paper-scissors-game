@@ -9,7 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
-
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
 <div class="container mt-5">
@@ -41,15 +44,16 @@
     </ul>
     <div id="gameBoard" class="result-board">Game Board</div>
     <div id="resultBoard" class="result-board" style="display:none">
-        <div id="player"> 👊🏻</div>
-        <p id="result">🏆</p>
-        <div id="computer"> 🤚🏻</div>
+        <div id="player" class="animate__animated"> 👊🏻</div>
+        <p id="result" ></p>
+        <div id="computer" class="animate__animated"> 🤚🏻</div>
         <p id="timer"></p>
     </div>
 
 
     <button class="reset-button">Reset Game</button>
 </div>
+
 </body>
 <script src="game.js"></script>
 </html>
