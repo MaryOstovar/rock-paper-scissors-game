@@ -15,6 +15,8 @@ function timer() {
   second = 15;
   const timerElement = document.querySelector('#timer');
 
+  timerElement.innerText = `⏱️ 00:${second}`;
+  
   countdownTimer = setInterval(() => {
     if (second <= 0) {
       clearInterval(countdownTimer);
